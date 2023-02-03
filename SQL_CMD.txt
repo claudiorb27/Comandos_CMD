@@ -1,0 +1,10 @@
+
+*********** Abrir consola cmd ***********
+
+1° C:\xampp\mysql\bin>mysql --local-infile=1 -u root -p
+2° No ingresar clave
+3° MariaDB [(none)]> create database "mydb"
+4° MariaDB [(none)]> use "mydb"
+5° MariaDB [mydb]> CREATE TABLE 'tabla' (´ID´ INT(3));
+6° MariaDB [db_tmn]> show tables;
+7° MariaDB [db_tmn]> load data infile "C:/data.csv" into table tabla fields terminated by ',';

@@ -1,0 +1,28 @@
+:::::::::::::::Activación con clave KMS mediante CMD:::::::::::::::::
+
+:::::::::::::::(1) Abrir la ubicacion del programa:::::::::::::::
+
+cd /d %ProgramFiles%\Microsoft Office\Office16
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+
+
+:::::::::::::::(2) Convertir la Licencia de Retail a Volume License:::::::::::::::
+		
+for /f %x in ('dir /b ..\root\Licenses16\projectpro2019vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+
+
+Nota: Este paso sólo funciona si has descargado Visio Original desde los servidores de Microsoft a través del enlace proporcionado en el video de mi canal: 
+
+
+:::::::::::::::(3) Instalar Clave KMS:::::::::::::::
+cscript ospp.vbs /inpkey:B4NPR-3FKK7-T2MBV-FRQ4W-PKD2B
+cscript ospp.vbs /sethst:kms8.msguides.com
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /act
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+Claves KMS de Project:
+Project 2019: B4NPR-3FKK7-T2MBV-FRQ4W-PKD2B
+
+Debes estar conectado a internet para que funcione
