@@ -1,0 +1,6 @@
+
+--> Soluciona error al instalar un archivo npm y no tiene permisos necesarios.
+
+
+sudo chown -R `whoami` ~/.npm
+sudo chown -R `whoami` /usr/local/lib/node_modules
